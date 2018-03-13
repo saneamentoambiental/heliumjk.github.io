@@ -1,3 +1,7 @@
+
+topbar: "true"
+img404: "/assets/img/404.gif"
+
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
@@ -7,8 +11,8 @@ pygments: false
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"
-url: # https://heliumjk.github.io
-baseurl: # "/heliumjk.github.io"
+url: "" # https://heliumjk.github.io
+baseurl: "" # "/heliumjk.github.io"
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
@@ -20,7 +24,6 @@ google_ad_client: ca-pub-9204963049240271
 
 post_limit: 5
 
-img404: "/assets/img/404.gif"
 
 title : Helium Jekyll
 tagline: Bootstrap 4 UI kit for jekyll
