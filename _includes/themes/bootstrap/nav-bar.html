@@ -22,12 +22,13 @@
                     {% if nav.url %}
                         {% comment %} internal/external URL check {% endcomment %}
                         {% if nav.url contains "://" %}
+                            {% assign external = true %}
                             {% assign domain = "" %}
                         {% else %}
                             {% assign domain = site.url | append: site.baseurl %}
                         {% endif %}
                          
-                        <a href="{{ domain }}{{ nav.url }}"><span class="nav-link">{{ nav.title }}</span></a>
+                        <a href="{{ domain }}{{ nav.url }}" {% if external %} target="_blank" {% endif %} ><span class="nav-link">{{ nav.title }}</span></a>
                     {% else %}
                         <span class="nav-link">{{ nav.title }}</span>
                     {% endif %}

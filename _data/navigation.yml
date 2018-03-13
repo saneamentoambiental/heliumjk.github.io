@@ -20,6 +20,10 @@ foo:
 
 # main links
 main:
+  - title: "Componentes"
+    url: "/components.html"
+  - title: "Original Template"
+    url: "https://heliumjk.github.io"
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
   - title: "About"
