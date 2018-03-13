@@ -1,0 +1,38 @@
+- name: "Elizabeth Jones"
+  avatar: "/assets/images/team/team-01.jpg"
+  bio: "Art Director"
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  google-plus:
+  facebook:
+  twitter:
+  url:
+    
+- name: "Sara smith"
+  avatar: "/assets/images/team/team-03.jpg"
+  bio: "Founder And ceo"
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  google-plus:
+  facebook:
+  twitter:
+  url:
+    
+- name: "Sommer Christian"
+  avatar: "/assets/images/team/team-02.jpg"
+  bio:  "creative studio head"
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  google-plus:
+  facebook:
+  twitter:
+  url:
+    
+   
+- name: "Pessoa 4"
+  avatar: "/assets/images/team/team-04.jpg"
+  bio:  "Bio 4"
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+  google-plus:
+  facebook:
+  twitter:
+  url:
+    
+   

@@ -1,0 +1,72 @@
+{% assign item=include.data %}
+<!-- Team Item Starts -->
+{% if include.type == "large" %}
+<div class="col-sm-6 col-md-4">                 
+<div class="team-item">
+    <figure class="team-profile">
+        <img src="{{item.avatar}}" alt="{{item.name}}">
+        <figcaption class="our-team">
+            <div class="details">
+                <p class="content-white">{{item.description}}</p>
+                <hr class="small-divider border-white">
+                <div class="social">
+                    {% if item.facebook %}
+                        <a class="facebook" href="https://www.facebook.com/{{item.facebook}}/"><i class="fa fa-facebook"></i></a>
+                    {% endif %}
+                    {% if item.twitter %}
+                        <a class="twitter" href="https://twitter.com/{{item.twitter}}"><i class="fa fa-twitter"></i></a>
+                    {% endif %}
+                    {% if item.linkedin %}
+                        <a class="linkedin" href="https://www.linkedin.com/in/{{item.linkedin}}/"><i class="fa fa-linkedin"></i></a>
+                    {% endif %}                    
+                    {% if item.instagram %}
+                        <a class="instagram" href="https://www.instagram.com/{{item.instagram}}/"><i class="fa fa-instagram"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </figcaption>
+    </figure>
+    <div class="info">
+    <h2>
+        {{item.name}}
+    </h2>
+    <p>
+        {{item.bio}}
+        asbasds
+    </p>
+    </div>
+</div>
+</div>
+<!-- Team Item Ends -->
+{% else %}
+<div class="col-sm-6 col-md-4">
+        <!-- Team Item Starts -->
+        <figure>
+          <img src="{{item.avatar}}" alt="">
+          <div class="image-overlay">
+            <div class="overlay-text text-center">
+              <div class="info-text">
+                <strong>{{item.name}}</strong>
+                <span>{{item.bio}}</span>
+              </div>
+              <hr class="small-divider border-white">
+              <ul class="social-icons">
+                {% if item.facebook %}
+                    <li><a class="facebook" href="https://www.facebook.com/{{item.facebook}}/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                {% endif %}
+                {% if item.twitter %}
+                <li><a class="twitter" href="https://twitter.com/{{item.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                {% endif %}
+                {% if item.linkedin %}
+                <li><a class="linkedin" href="https://www.linkedin.com/in/{{item.linkedin}}/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                {% endif %}                    
+                {% if item.instagram %}
+                <li><a class="instagram" href="https://www.instagram.com/{{item.instagram}}/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </figure>
+        <!-- Team Item Ends -->
+      </div>
+{% endif%}
