@@ -1,0 +1,46 @@
+{% assign item=include.data %}
+
+{% if item.url contains "://" %}
+  {% assign external = true %}
+  {% assign domain = "" %}
+{% else %}
+  {% assign domain = site.url | append: site.baseurl %}
+{% endif %}
+
+<!-- Team Item Starts -->
+{% if include.size == "small" %}
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
+          <!-- Blog Item Starts -->
+          <div class="blog-item-wrapper blog-block text-center">
+            {% if item.img %}                
+              <div class="blog-item-img">
+                <a href="{{ domain }}{{ item.url }}"><img src="/assets/images/{{item.img}}"></a>
+              </div>            
+            {% endif %}
+            <div class="blog-item-text">
+              <h3> <a href="{{ domain }}{{ item.url }}" {% if external %} target="_blank" {% endif %} >{{item.title}}</a>
+              </h3>
+              <div class="meta-tags">
+                {% if item.date %}<span class="date"><i class="lnr lnr-calendar-full"></i>{{item.date | date: ' %b %d, %Y' }}</span>{% endif %}
+                <!--span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span-->
+              </div>
+              <p>{{ post.excerpt }}</p>
+              <a href="{{ domain }}{{ item.url }}" {% if external %} target="_blank" {% endif %} class="btn btn-common btn-rm">{{ site.data.ui-text[site.locale].more_label  | default: "Read more" }}</a>
+            </div>
+          </div>
+          <!-- Blog Item Wrapper Ends-->
+        </div>
+{% elsif include.size == "medium" %}
+<div class="col-md-4">
+    <div class="blog-block">
+      {% if item.img %}        
+          <a href="{{ domain }}{{ item.url }}"><img src="/assets/images/{{item.img}}"></a>
+      {% endif %}      
+      <div class="blog-content">
+        <h3><a href="{{ domain }}{{ item.url }}">{{item.title}}</a></h3>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ domain }}{{ item.url }}" {% if external %} target="_blank" {% endif %} class="btn btn-common">{{ site.data.ui-text[site.locale].more_label  | default: "Read more" }}</a>
+      </div>
+    </div>
+  </div>
+{% endif %}
