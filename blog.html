@@ -11,18 +11,27 @@ canonical: https://heliumjk.github.io/blog
 ---
 {% include JB/setup %}
 
-
+<h3>Small</h3>
 {% for post in site.posts %}
   {% include blog-card.html data=post size="small" %}
   {% break %}
 {% endfor %}
+<div class="mb-60"></div>
+<h3>Medium</h3>
 {% for post in site.posts %}
   {% include blog-card.html data=post size="medium" %}
   {% break %}
 {% endfor %}
+<div class="mb-60"></div>
+<h3>Large</h3>
+{% for post in site.posts %}
+  {% include blog-card.html data=post size="large" %}
+ 
+{% endfor %}
+<div class="mb-60"></div>
+<h3>Original</h3>
 {% for post in site.posts %} 
-  {% break %} 598 
-  478
+  
 	  <div class="blog-block post-content-area">
 	   {% if post.img %}	  
             <img src="{{ BASE_PATH }}/assets/images/{{ post.img }}" alt="{{ post.title }} image">
@@ -34,6 +43,6 @@ canonical: https://heliumjk.github.io/blog
             </div>
           </div>
     <div class="mb-60"></div>
-    {% break %}
+    
 {% endfor %}
 

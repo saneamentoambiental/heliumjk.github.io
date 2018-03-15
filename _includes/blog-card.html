@@ -1,3 +1,16 @@
+{% comment %}<!--
+This template add a blog card into page.
+Define the container and call 
+    { % include blog-card.html data=value size={small|medium|large} % }
+The value is a post. 
+Example:
+  { % for post in site.posts % }
+    { % include blog-card.html data=post size="large" % } 
+  { % endfor % }
+-->{% endcomment %}
+
+
+
 {% assign item=include.data %}
 
 {% if item.url contains "://" %}
@@ -43,4 +56,16 @@
       </div>
     </div>
   </div>
+{% elsif include.size =="large" %}
+<div class="blog-block post-content-area">
+    {% if item.img %}        
+      <a href="{{ domain }}{{ item.url }}"><img src="/assets/images/{{item.img}}"></a>
+    {% endif %}      
+    <div class="blog-post">
+        <h3><a href="{{ domain }}{{ item.url }}">{{item.title}}</a></h3>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ domain }}{{ item.url }}" {% if external %} target="_blank" {% endif %} class="btn btn-common">{{ site.data.ui-text[site.locale].more_label  | default: "Read more" }}</a>      
+    </div>
+  </div>
+  <div class="mb-60"></div>
 {% endif %}
