@@ -22,15 +22,26 @@ foo:
 main:
   - title: "Componentes"
     url: "/components.html"
+  - title: "Custom Samples"    
+    children:
+      - title: "Lista Pessoas"
+        url: "/team-using-data-file.html"
+      - title: "Blog cards"
+        url: "/blog.html"
+      - title: "Feeds"
+        url: "/feed.xml"
   - title: "Original Template"
-    url: "https://heliumjk.github.io"
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-  - title: "About"
-    url: /about/
+    children:
+    - title: "Source" 
+      url: "https://heliumjk.github.io"
+    - title: "Quick-Start Guide"
+      url: /docs/quick-start-guide/
+    - title: "About"
+      url: /about/
+    - title: "Terms &amp; Privacy Policy"
+      url: /terms/
   - title: "Sample Posts"
     url: /year-archive/
   - title: "Sample Collections"
     url: /collection-archive/
-  - title: "Terms &amp; Privacy Policy"
-    url: /terms/
+  
