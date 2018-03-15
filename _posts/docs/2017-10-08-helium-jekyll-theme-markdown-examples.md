@@ -145,7 +145,7 @@ frameborder="0" allowfullscreen></iframe>
 #### in markdown cannot guarantee it work well
 
 
-If are you looking to html version explore [Labels Alerts]({{ BASE_PATH/labels-alerts }}) and [Components]({{ BASE_PATH/components }})
+If are you looking to html version explore [Labels Alerts]({{ BASE_PATH}}/labels-alerts) and [Components]({{ BASE_PATH }}/components)
 
 
 {:.massage-box .alert-success}

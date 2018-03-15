@@ -2,12 +2,30 @@
 topbar: "true"
 img404: "/assets/img/404.gif"
 
+# Plugins (previously gems:)
+plugins:
+#  - jekyll-paginate
+#  - jekyll-sitemap
+#  - jekyll-gist
+  - jekyll-feed
+#  - jemoji
+
+  # mimic GitHub Pages with --safe
+whitelist:
+#  - jekyll-paginate
+#  - jekyll-sitemap
+#  - jekyll-gist
+  - jekyll-feed
+#  - jemoji
+
+excerpt_separator: "<!--more-->"
+
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: false
+highlighter: false
 markdown: kramdown
 extensions: [fenced_code_blocks]
 excerpt_separator: "<!--more-->"

@@ -20,9 +20,9 @@ canonical: https://fullit.github.io
 
 An example post about code insertion into posts.
 
-<!--more-->
 ## Testing code snippet highlight
 
+<!--more-->
 The following example shows how to highlight a piece of code throughout the use of Javascript:
 
 {% highlight javascript %}
