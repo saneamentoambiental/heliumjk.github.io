@@ -47,6 +47,8 @@ main:
         url: "/blog.html"
       - title: "Feeds"
         url: "/feed.xml"
+      - title: "GIST"
+        url: "/gist.html"
 # main links
 main1:        
   - title: "Original Template"
