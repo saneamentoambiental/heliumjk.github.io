@@ -6,4 +6,5 @@ group :jekyll_plugins do
     gem 'jemoji'
     gem 'jekyll-gist'
     gem 'jekyll-email-protect'
+    gem 'liquid_pluralize'
 end
