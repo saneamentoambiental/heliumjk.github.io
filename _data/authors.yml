@@ -1,5 +1,6 @@
 - name: "Elizabeth Jones"
   avatar: &avatar "/assets/images/team/team-01.jpg"
+  email: 'teste@teste.com'
   picture: *avatar
   bio: "Art Director"
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."

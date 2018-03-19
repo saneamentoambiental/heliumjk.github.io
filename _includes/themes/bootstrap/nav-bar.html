@@ -29,11 +29,16 @@
                         {% endif %}
                         
                         <a href="{{ domain }}{{ nav.url }}" {% if external %} target="_blank" {% endif %}>
+                                
+                            
                             <span class="nav-link">
-                            {% if nav.icon %} 
-                                <img style="max-width: 25px" src="{{ domain }}{{nav.icon}}" alt="icon {{ nav.title }}">
-                            {% endif %}
-                            {{ nav.title }}</span>
+                                {% if nav.icon %}                                 
+                                    <img style="max-width: 15px" src="{{ domain }}{{nav.icon}}" alt="icon {{ nav.title }}">
+                                {% endif %}
+                                {% if nav.icon_class %}                                 
+                                    <i class="{{nav.icon_class}}"></i>    
+                                {% endif %}
+                                {{ nav.title }}</span>
                         </a>
                     {% else %}
                         <span class="nav-link">{{ nav.title }}</span>

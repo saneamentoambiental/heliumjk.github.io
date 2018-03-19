@@ -25,9 +25,10 @@ main:
     url: "/about.html"
   - title: "Projetos"
     url: "/components.html"
-    icon: "/assets/img/projects.png"
-  - title: "Equipe"    
+    icon_clas: "fa fa-cubes"
+  - title: "Equipes"     
     url: "/equipe.html"
+    icon_class: "fa fa-users"   
   - title: "Eventos"  
     url: "/eventos.html"
   - title: "Downloads"
@@ -35,8 +36,7 @@ main:
   - title: "Contato"
     url: "/contact.html"
 
-# main links
-#main1:
+
   - title: "Componentes"
     url: "/components.html"
   - title: "Custom Samples"    
@@ -47,6 +47,8 @@ main:
         url: "/blog.html"
       - title: "Feeds"
         url: "/feed.xml"
+# main links
+main1:        
   - title: "Original Template"
     children:
     - title: "Source" 

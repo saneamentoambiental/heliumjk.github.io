@@ -22,6 +22,10 @@
                     {% if item.instagram %}
                         <a class="instagram" href="https://www.instagram.com/{{item.instagram}}/"><i class="fa fa-instagram"></i></a>
                     {% endif %}
+                    {% if item.email %}
+                        <a class="email" href="mailto:{{ 'example@example.com' | encode_email }}"><i class="fa fa-envelope"></i></a>
+                        
+                    {% endif %}
                 </div>
             </div>
         </figcaption>
