@@ -18,8 +18,25 @@ foo:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
 
+
 # main links
 main:
+  - title: "Sobre"
+    url: "/about.html"
+  - title: "Projetos"
+    url: "/components.html"
+    icon: "/assets/img/projects.png"
+  - title: "Equipe"    
+    url: "/equipe.html"
+  - title: "Eventos"  
+    url: "/eventos.html"
+  - title: "Downloads"
+    url: "/downloads.html"
+  - title: "Contato"
+    url: "/contact.html"
+
+# main links
+#main1:
   - title: "Componentes"
     url: "/components.html"
   - title: "Custom Samples"    

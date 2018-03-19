@@ -1,5 +1,6 @@
 - name: "Elizabeth Jones"
-  avatar: "/assets/images/team/team-01.jpg"
+  avatar: &avatar "/assets/images/team/team-01.jpg"
+  picture: *avatar
   bio: "Art Director"
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   google-plus:
@@ -8,7 +9,8 @@
   url:
     
 - name: "Sara smith"
-  avatar: "/assets/images/team/team-03.jpg"
+  avatar: &avatar "/assets/images/team/team-03.jpg"
+  picture: *avatar 
   bio: "Founder And ceo"
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   google-plus:
@@ -17,7 +19,8 @@
   url:
     
 - name: "Sommer Christian"
-  avatar: "/assets/images/team/team-02.jpg"
+  avatar: &avatar "/assets/images/team/team-02.jpg"
+  picture: *avatar
   bio:  "creative studio head"
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   google-plus:
@@ -27,7 +30,8 @@
     
    
 - name: "Pessoa 4"
-  avatar: "/assets/images/team/team-04.jpg"
+  avatar: &avatar "/assets/images/team/team-04.jpg"
+  picture: *avatar
   bio:  "Bio 4"
   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   google-plus:
