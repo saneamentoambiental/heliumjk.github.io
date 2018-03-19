@@ -23,8 +23,7 @@
                         <a class="instagram" href="https://www.instagram.com/{{item.instagram}}/"><i class="fa fa-instagram"></i></a>
                     {% endif %}
                     {% if item.email %}
-                        <a class="email" href="mailto:{{ 'example@example.com' | encode_email }}"><i class="fa fa-envelope"></i></a>
-                        
+                        <a class="email" href="mailto:{{ 'example@example.com' | encode_email }}"><i class="fa fa-envelope"></i></a>   
                     {% endif %}
                 </div>
             </div>
@@ -66,6 +65,9 @@
                 {% endif %}                    
                 {% if item.instagram %}
                 <li><a class="instagram" href="https://www.instagram.com/{{item.instagram}}/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                {% endif %}
+                {% if item.email %}
+                <li><a class="email" href="mailto:{{ 'example@example.com' | encode_email }}"><i class="fa fa-envelope"  aria-hidden="true"></i></a></li>
                 {% endif %}
               </ul>
             </div>
