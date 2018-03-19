@@ -7,6 +7,14 @@ lang: "pt-BR"
 topbar: "true"
 img404: "/assets/img/404.gif"
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
+
+
 # Plugins (previously gems:)
 plugins:
 #  - jekyll-paginate
