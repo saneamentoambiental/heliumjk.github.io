@@ -42,6 +42,7 @@ en: &DEFAULT_EN
   loading_label              : "Loading..."
   search_placeholder_text    : "Enter your search term..."
   results_found              : "Result(s) found"
+  continue_label             : "Continuar"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -268,6 +269,7 @@ pt-BR:
   comment_success_msg        : "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
   comment_error_msg          : "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
   loading_label              : "Carregando..."
+  continue_label             : "Continuar"
 
 # Italian
 # -------

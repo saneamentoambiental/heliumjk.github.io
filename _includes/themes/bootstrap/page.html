@@ -8,7 +8,8 @@
                             <div class="col-md-6">
                                 <div class="home_text">
                                     <h1 class="text-white">{{ page.title }}</h1>
-                                    {% if page.tagline %} <p class="text-white">{{ page.tagline }}</p>{% endif %}                                   
+                                    {% if page.tagline %} <p class="text-white">{{ page.tagline }}</p>{% endif %}  
+                                    {% if page.read_time %}<p>{% include reading_time.html %}</p>{% endif %}                                 
                                 </div>
 
                                 <div class="home_btns m-top-40">

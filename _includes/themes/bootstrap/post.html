@@ -5,10 +5,9 @@
             <div class="col-xs-12 col-sm-6">
               <div class="hero-content-v2" style="margin-top:10px!important;">
                 <h3><strong>{{ page.title }}</strong></h3>
-                {% if page.tagline %}<p>
-                          {{ page.tagline }}
-                </p>{% endif %}
-                <a href="#post" class="page-scroll btn btn-lg btn-default-filled">Read Post</a>
+                {% if page.tagline %}<p>{{ page.tagline }}</p>{% endif %}
+                {% if page.read_time %}<p>{% include reading_time.html %}</p>{% endif %}
+                <a href="#post" class="page-scroll btn btn-lg btn-default-filled">{{ site.data.ui-text[site.locale].continue | default: "Continue" }}</a>
                 <div class="mb-60"></div>                      
               </div>
             </div>
